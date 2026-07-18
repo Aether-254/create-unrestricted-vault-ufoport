@@ -20,9 +20,9 @@
     "create_unrestricted_vault.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.17.2",
-    "minecraft": "1.20.1",
-    "create": ">=6.0.8",
-    "cloth-config": ">=11.1.136"
+    "fabricloader": ">=0.16.0",
+    "minecraft": ["1.21", "1.21.1"],
+    "create_ufoport": ">=0.9.3-d",
+    "cloth-config": ">=15.0.140"
   }
 }
