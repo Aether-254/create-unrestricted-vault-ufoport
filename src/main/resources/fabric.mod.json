@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "create_unrestricted_vault",
+  "version": "${version}",
+  "name": "Create: Unrestricted Vault",
+  "description": "Makes Create Item Vault width and length limits configurable and adds optional vertical Item Vaults without changing Vault Capability.",
+  "authors": [
+    "Aether_254"
+  ],
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "awa.Aether_254.create_unrestricted_vault.CreateUnrestrictedVault"
+    ],
+    "modmenu": [
+      "awa.Aether_254.create_unrestricted_vault.client.UnrestrictedVaultModMenu"
+    ]
+  },
+  "mixins": [
+    "create_unrestricted_vault.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "minecraft": "1.20.1",
+    "create": ">=6.0.8",
+    "cloth-config": ">=11.1.136"
+  }
+}

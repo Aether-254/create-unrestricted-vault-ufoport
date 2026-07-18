@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "awa.Aether_254.create_unrestricted_vault.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "ItemVaultBlockEntityMixin",
+    "ItemVaultBlockMixin",
+    "ItemVaultItemMixin"
+  ],
+  "client": [
+    "ItemVaultCTBehaviourMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
