@@ -32,7 +32,7 @@ repositories {
 
 def ufoPortCoordinate = "create.ufoport.direct:create-ufoport:${project.create_version}"
 def ufoPortBundle = configurations.detachedConfiguration(dependencies.create(ufoPortCoordinate))
-def ufoPortCompileDirectory = layout.buildDirectory.dir("ufoport-compile").get().asFile
+def ufoPortCompileDirectory = new File(gradle.gradleUserHomeDir, "caches/create-ufoport-compile/${project.create_version}")
 project.sync { spec ->
     spec.from(zipTree(ufoPortBundle.singleFile)) {
         include "META-INF/jars/*.jar"
